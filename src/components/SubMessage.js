@@ -13,7 +13,7 @@ export default function SubMessage() {
           fontWeight: 'bold',
           textAlign: 'center',
           marginHorizontal: 14,
-          lineHeight: 21,
+          lineHeight: 21.5,
         }}
       >
         You cant sign up for NetFlix in the {'\n'}app. We know its a hassle.
