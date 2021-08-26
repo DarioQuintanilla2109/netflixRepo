@@ -8,16 +8,30 @@ export default function Navbar() {
         <View style={{ marginLeft: 15 }}>
           <Image
             source={require('../../assets/netflix.png')}
-            style={{ width: 100, height: 50, borderRadius: 100 }}
+            style={{ width: 100, height: 60, borderRadius: 100 }}
           />
         </View>
         <View style={styles.alignRight}>
-          <Text style={{ color: 'white', marginTop: 22, marginRight: 20 }}>
+          <Text
+            style={{
+              color: 'white',
+              marginTop: 22,
+              marginRight: 20,
+              fontWeight: 'bold',
+            }}
+          >
             Help
           </Text>
         </View>
         <View>
-          <Text style={{ color: 'white', marginTop: 22, marginRight: 20 }}>
+          <Text
+            style={{
+              color: 'white',
+              marginTop: 22,
+              marginRight: 20,
+              fontWeight: 'bold',
+            }}
+          >
             Privacy
           </Text>
         </View>
