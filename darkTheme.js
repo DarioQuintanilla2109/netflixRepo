@@ -4,7 +4,7 @@ const myDarkTheme = () => {
     dark: true,
     colors: {
       primary: '#9933ff',
-      background: '#000023',
+      background: '#000000',
       card: '#000028',
       text: '#ffffff',
       border: '#000028',
