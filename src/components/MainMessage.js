@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-export default function MainMessage() {
+export default function MainMessage(props) {
   return (
     <View>
       <Text
@@ -15,7 +15,7 @@ export default function MainMessage() {
           marginHorizontal: 25,
         }}
       >
-        Trying to join Netflix?
+        {props.text}
       </Text>
     </View>
   )

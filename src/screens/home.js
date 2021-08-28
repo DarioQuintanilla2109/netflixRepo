@@ -12,9 +12,11 @@ import MainMessage from '../components/MainMessage'
 import SubMessage from '../components/SubMessage'
 import SignIn from '../components/SignIn'
 import Swiper from 'react-native-swiper'
+import Device from '../screens/device'
 export default function home() {
   return (
     <Swiper
+      loop={false}
       activeDotColor='red'
       dotColor='gray'
       style={styles.wrapper}
@@ -34,13 +36,15 @@ export default function home() {
           imageStyle={{ opacity: 0.5 }}
         >
           <Navbar />
-          <MainMessage />
-          <SubMessage />
+          <MainMessage text={'Trying to join Netflix?'} />
+          <SubMessage
+            text={` You cant sign up for NetFlix in the\napp. We know its a hassle. After\nyoure a member, you can start\n watching in the app.`}
+          />
           <SignIn />
         </ImageBackground>
       </View>
-      <View style={styles.slide2}>
-        <Text style={styles.text}>Beautiful</Text>
+      <View style={styles.deviceScreen}>
+        <Device />
       </View>
     </Swiper>
   )
@@ -61,10 +65,7 @@ const styles = StyleSheet.create({
   slide1: {
     flex: 1,
   },
-  slide2: {
+  deviceScreen: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#97CAE5',
   },
 })

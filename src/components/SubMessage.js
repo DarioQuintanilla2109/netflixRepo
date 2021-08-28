@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-export default function SubMessage() {
+export default function SubMessage(props) {
   return (
     <View>
       <Text
@@ -16,9 +16,7 @@ export default function SubMessage() {
           lineHeight: 21.5,
         }}
       >
-        You cant sign up for NetFlix in the {'\n'}app. We know its a hassle.
-        After{'\n'}
-        youre a member, you can start{'\n'} watching in the app.
+        {props.text}
       </Text>
     </View>
   )
