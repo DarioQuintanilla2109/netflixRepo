@@ -3,19 +3,15 @@ import { View, Text, StyleSheet } from 'react-native'
 import Navbar from '../components/Navbar'
 import MainMessage from '../components/MainMessage'
 import SubMessage from '../components/SubMessage'
-import SignIn from '../components/SignIn'
-export default function device() {
+import Button from '../components/SignIn'
+export default function countdown(props) {
   return (
     <View style={styles.container}>
       <Navbar />
-      <MainMessage text={'Watch on any device'} />
-      <SubMessage
-        text={
-          'Stream on your phone, tablet, laptop, and TV without paying more.'
-        }
-      />
+      <MainMessage text={'3, 2, 1... Download!'} />
+      <SubMessage text={'Always have something to watch offline.'} />
       <View style={styles.spacer}>
-        <SignIn />
+        <Button />
       </View>
     </View>
   )
@@ -27,6 +23,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   spacer: {
-    marginTop: 40,
+    marginTop: 60,
   },
 })

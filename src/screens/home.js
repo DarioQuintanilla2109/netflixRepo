@@ -13,6 +13,8 @@ import SubMessage from '../components/SubMessage'
 import SignIn from '../components/SignIn'
 import Swiper from 'react-native-swiper'
 import Device from '../screens/device'
+import Countdown from './countdown'
+
 export default function home() {
   return (
     <Swiper
@@ -28,7 +30,7 @@ export default function home() {
         left: '50%',
       }}
     >
-      <View style={styles.slide1}>
+      <View style={styles.homeScreen}>
         <ImageBackground
           style={styles.image}
           source={display}
@@ -46,6 +48,9 @@ export default function home() {
       <View style={styles.deviceScreen}>
         <Device />
       </View>
+      <View style={styles.deviceScreen}>
+        <Countdown />
+      </View>
     </Swiper>
   )
 }
@@ -62,7 +67,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   wrapper: {},
-  slide1: {
+  homeScreen: {
     flex: 1,
   },
   deviceScreen: {
