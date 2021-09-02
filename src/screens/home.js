@@ -21,13 +21,10 @@ export default function home() {
       loop={false}
       activeDotColor='red'
       dotColor='gray'
-      style={styles.wrapper}
       showsPagination={true}
       paginationStyle={{
         position: 'absolute',
         top: '77%',
-        right: '50%',
-        left: '50%',
       }}
     >
       <View style={styles.homeScreen}>
@@ -66,7 +63,6 @@ const styles = StyleSheet.create({
   mainText: {
     textAlign: 'center',
   },
-  wrapper: {},
   homeScreen: {
     flex: 1,
   },
