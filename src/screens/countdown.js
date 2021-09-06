@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import MainMessage from '../components/MainMessage'
 import SubMessage from '../components/SubMessage'
 import Button from '../components/SignIn'
+
 export default function countdown(props) {
   return (
     <View style={styles.container}>

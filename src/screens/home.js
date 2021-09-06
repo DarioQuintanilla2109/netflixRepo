@@ -15,7 +15,7 @@ import Swiper from 'react-native-swiper'
 import Device from '../screens/device'
 import Countdown from './countdown'
 
-export default function home() {
+export default function home({ navigation }) {
   return (
     <Swiper
       loop={false}
@@ -39,7 +39,7 @@ export default function home() {
           <SubMessage
             text={` You cant sign up for NetFlix in the\napp. We know its a hassle. After\nyoure a member, you can start\n watching in the app.`}
           />
-          <SignIn />
+          <SignIn navigation={navigation} />
         </ImageBackground>
       </View>
       <View style={styles.deviceScreen}>

@@ -1,11 +1,14 @@
 import React from 'react'
-import { View, Text, TouchableHighlight, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
-export default function SignIn() {
+export default function SignIn({ navigation }) {
   return (
-    <TouchableHighlight style={styles.button}>
+    <TouchableOpacity
+      style={styles.button}
+      onPress={() => navigation.navigate('bottomTabNav')}
+    >
       <Text style={styles.buttonText}>SIGN IN</Text>
-    </TouchableHighlight>
+    </TouchableOpacity>
   )
 }
 
