@@ -16,26 +16,32 @@ export default function BottomTabNavigator({ navigation }) {
         tabStyle: {
           paddingTop: 10,
         },
-
         activeTintColor: '#FFFFFF',
-        keyboardHidesTabBar: true,
-        safeAreaInsets: { top: 10 },
       }}
-      screenOptions={({ route }) => ({})}
     >
       <Tab.Screen
         name='Home'
         component={menu}
         options={{
-          tabBarIcon: () => <Icon name='ios-home' color={'white'} size={25} />,
+          tabBarIcon: ({ tintColor, focused }) => (
+            <Icon
+              name={focused ? 'ios-home' : 'ios-home-outline'}
+              color={focused ? 'white' : 'gray'}
+              size={25}
+            />
+          ),
         }}
       />
       <Tab.Screen
         name='New and Hot'
         component={menu}
         options={{
-          tabBarIcon: () => (
-            <Icon name='ios-folder' color={'white'} size={25} />
+          tabBarIcon: ({ tintColor, focused }) => (
+            <Icon
+              name={focused ? 'ios-folder' : 'ios-folder-outline'}
+              color={focused ? 'white' : 'gray'}
+              size={25}
+            />
           ),
         }}
       />
@@ -43,15 +49,25 @@ export default function BottomTabNavigator({ navigation }) {
         name='Fast Laughs'
         component={menu}
         options={{
-          tabBarIcon: () => <Icon name='ios-happy' color={'white'} size={25} />,
+          tabBarIcon: ({ tintColor, focused }) => (
+            <Icon
+              name={focused ? 'ios-happy' : 'ios-happy-outline'}
+              color={focused ? 'white' : 'gray'}
+              size={25}
+            />
+          ),
         }}
       />
       <Tab.Screen
         name='Search'
         component={menu}
         options={{
-          tabBarIcon: () => (
-            <Icon name='ios-search' color={'white'} size={25} />
+          tabBarIcon: ({ tintColor, focused }) => (
+            <Icon
+              name={focused ? 'ios-search' : 'ios-search-outline'}
+              color={focused ? 'white' : 'gray'}
+              size={25}
+            />
           ),
         }}
       />
@@ -59,8 +75,12 @@ export default function BottomTabNavigator({ navigation }) {
         name='Downloads'
         component={menu}
         options={{
-          tabBarIcon: () => (
-            <Icon name='ios-download' color={'white'} size={25} />
+          tabBarIcon: ({ tintColor, focused }) => (
+            <Icon
+              name={focused ? 'ios-download' : 'ios-download-outline'}
+              color={focused ? 'white' : 'gray'}
+              size={25}
+            />
           ),
         }}
       />
