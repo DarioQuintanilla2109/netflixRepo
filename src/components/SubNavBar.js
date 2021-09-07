@@ -6,13 +6,12 @@ export default function Navbar(props) {
     <SafeAreaView
       style={{
         height: '60%',
-
         marginTop: 0,
         paddingTop: 0,
       }}
     >
       <View style={styles.container}>
-        <View style={{ marginLeft: 15 }}>
+        <View style={{ marginLeft: 35 }}>
           <Text style={styles.textStyle}>TV Shows</Text>
         </View>
         <View>
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
   textStyle: {
     color: 'white',
     marginTop: 12,
-    marginRight: 20,
+
     fontWeight: 'bold',
   },
   spacing: {

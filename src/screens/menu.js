@@ -11,7 +11,7 @@ import Navbar from '../components/Navbar'
 import SubNavBar from '../components/SubNavBar'
 import Icon from 'react-native-vector-icons/Ionicons'
 import movieDisplay from '../../assets/movieDisplay.jpg'
-
+import PlayBar from '../components/PlayBar'
 export default function menu(props) {
   return (
     <SafeAreaView style={styles.container}>
@@ -28,7 +28,7 @@ export default function menu(props) {
         <SubNavBar />
       </ImageBackground>
       <View style={{ flex: 2 }}>
-        <Text>Rest of app</Text>
+        <PlayBar />
       </View>
     </SafeAreaView>
   )
