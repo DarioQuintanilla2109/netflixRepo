@@ -32,7 +32,7 @@ export default function home({ navigation }) {
           style={styles.image}
           source={display}
           resizeMode='cover'
-          imageStyle={{ opacity: 0.5 }}
+          imageStyle={{ opacity: 0.8 }}
         >
           <Navbar rightIcon={'About'} farRightIcon={'Privacy'} />
           <MainMessage text={'Trying to join Netflix?'} />
@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    width: '100%',
   },
   mainText: {
     textAlign: 'center',

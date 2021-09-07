@@ -1,5 +1,11 @@
 import React from 'react'
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  Platform,
+} from 'react-native'
 
 export default function SignIn({ navigation }) {
   return (
@@ -14,7 +20,7 @@ export default function SignIn({ navigation }) {
 
 const styles = StyleSheet.create({
   button: {
-    marginTop: '60%',
+    marginTop: Platform.OS === 'ios' ? '60%' : '40%',
     height: 40,
     borderRadius: 4,
     borderWidth: 0.5,
