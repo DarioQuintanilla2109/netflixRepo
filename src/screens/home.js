@@ -34,7 +34,7 @@ export default function home({ navigation }) {
           resizeMode='cover'
           imageStyle={{ opacity: 0.5 }}
         >
-          <Navbar />
+          <Navbar rightIcon={'About'} farRightIcon={'Privacy'} />
           <MainMessage text={'Trying to join Netflix?'} />
           <SubMessage
             text={` You cant sign up for NetFlix in the\napp. We know its a hassle. After\nyoure a member, you can start\n watching in the app.`}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet, SafeAreaView } from 'react-native'
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -20,7 +20,7 @@ export default function Navbar() {
               fontWeight: 'bold',
             }}
           >
-            Help
+            {props.rightIcon}
           </Text>
         </View>
         <View>
@@ -32,7 +32,7 @@ export default function Navbar() {
               fontWeight: 'bold',
             }}
           >
-            Privacy
+            {props.farRightIcon}
           </Text>
         </View>
       </View>

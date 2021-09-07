@@ -8,7 +8,7 @@ import Button from '../components/SignIn'
 export default function countdown(props) {
   return (
     <View style={styles.container}>
-      <Navbar />
+      <Navbar rightIcon={'About'} farRightIcon={'Privacy'} />
       <MainMessage text={'3, 2, 1... Download!'} />
       <SubMessage text={'Always have something to watch offline.'} />
       <View style={styles.spacer}>

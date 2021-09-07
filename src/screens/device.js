@@ -7,7 +7,7 @@ import SignIn from '../components/SignIn'
 export default function device() {
   return (
     <View style={styles.container}>
-      <Navbar />
+      <Navbar rightIcon={'About'} farRightIcon={'Privacy'} />
       <MainMessage text={'Watch on any device'} />
       <SubMessage
         text={
