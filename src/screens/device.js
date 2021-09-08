@@ -8,7 +8,9 @@ export default function device() {
   return (
     <View style={styles.container}>
       <Navbar rightIcon={'About'} farRightIcon={'Privacy'} />
-      <MainMessage text={'Watch on any device'} />
+      <View style={styles.mainMessage}>
+        <MainMessage text={'Watch on any device'} />
+      </View>
       <SubMessage
         text={
           'Stream on your phone, tablet, laptop, and TV without paying more.'
@@ -28,5 +30,8 @@ const styles = StyleSheet.create({
   },
   spacer: {
     marginTop: 40,
+  },
+  mainMessage: {
+    marginTop: '73%',
   },
 })

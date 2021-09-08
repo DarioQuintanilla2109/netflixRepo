@@ -9,8 +9,8 @@ export default function FlatlistMovies() {
         key={index}
         source={item}
         style={{
-          width: 160,
-          height: 120,
+          width: 60,
+          height: 60,
           borderWidth: 2,
           borderColor: '#d35647',
           resizeMode: 'contain',
@@ -21,14 +21,12 @@ export default function FlatlistMovies() {
   }
 
   return (
-    <View>
-      <FlatList
-        data={MOVIE_DATA}
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-        renderItem={renderMovies}
-      ></FlatList>
-    </View>
+    <FlatList
+      data={MOVIE_DATA}
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}
+      renderItem={renderMovies}
+    ></FlatList>
   )
 }
 

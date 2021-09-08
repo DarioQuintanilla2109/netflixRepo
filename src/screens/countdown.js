@@ -9,7 +9,9 @@ export default function countdown(props) {
   return (
     <View style={styles.container}>
       <Navbar rightIcon={'About'} farRightIcon={'Privacy'} />
-      <MainMessage text={'3, 2, 1... Download!'} />
+      <View style={styles.mainMessage}>
+        <MainMessage text={'3, 2, 1... Download!'} />
+      </View>
       <SubMessage text={'Always have something to watch offline.'} />
       <View style={styles.spacer}>
         <Button />
@@ -25,5 +27,8 @@ const styles = StyleSheet.create({
   },
   spacer: {
     marginTop: 60,
+  },
+  mainMessage: {
+    marginTop: '73%',
   },
 })

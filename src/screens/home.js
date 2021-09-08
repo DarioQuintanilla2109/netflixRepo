@@ -35,7 +35,9 @@ export default function home({ navigation }) {
           imageStyle={{ opacity: 0.8 }}
         >
           <Navbar rightIcon={'About'} farRightIcon={'Privacy'} />
-          <MainMessage text={'Trying to join Netflix?'} />
+          <View style={styles.mainMessage}>
+            <MainMessage text={'Trying to join Netflix?'} />
+          </View>
           <SubMessage
             text={` You cant sign up for NetFlix in the\napp. We know its a hassle. After\nyoure a member, you can start\n watching in the app.`}
           />
@@ -67,5 +69,8 @@ const styles = StyleSheet.create({
   },
   deviceScreen: {
     flex: 1,
+  },
+  mainMessage: {
+    marginTop: '73%',
   },
 })

@@ -3,7 +3,7 @@ import { View, Text } from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import menu from '../screens/menu'
 import Icon from 'react-native-vector-icons/Ionicons'
-
+import practiceFlatlist from '../components/PracticeFlatlist'
 const Tab = createBottomTabNavigator()
 
 export default function BottomTabNavigator({ navigation }) {
@@ -34,7 +34,7 @@ export default function BottomTabNavigator({ navigation }) {
       />
       <Tab.Screen
         name='New and Hot'
-        component={menu}
+        component={practiceFlatlist}
         options={{
           tabBarIcon: ({ tintColor, focused }) => (
             <Icon

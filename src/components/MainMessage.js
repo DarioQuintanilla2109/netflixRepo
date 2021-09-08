@@ -9,7 +9,6 @@ export default function MainMessage(props) {
           color: 'white',
           fontSize: 34,
           textAlign: 'center',
-          marginTop: '73%',
           fontWeight: 'bold',
           letterSpacing: 0.1,
           marginHorizontal: 25,
