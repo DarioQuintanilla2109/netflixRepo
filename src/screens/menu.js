@@ -29,7 +29,7 @@ export default function menu(props) {
           style={styles.image}
           source={movieDisplay}
           resizeMode='cover'
-          imageStyle={{ opacity: 0.5 }}
+          imageStyle={{ opacity: 0.8 }}
         >
           <Navbar
             rightIcon={<Icon name='ios-albums' size={25} />}
@@ -70,6 +70,7 @@ export default function menu(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'black',
   },
   image: {
     height: 550,
