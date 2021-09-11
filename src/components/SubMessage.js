@@ -8,7 +8,7 @@ export default function SubMessage(props) {
         style={{
           color: 'white',
           fontSize: 16,
-          marginTop: '7%',
+          marginTop: '3.8%',
           marginHorizontal: 14,
           fontWeight: 'bold',
           textAlign: 'center',

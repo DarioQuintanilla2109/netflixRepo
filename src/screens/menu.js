@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'black',
   },
   image: {
-    height: 550,
+    height: 480,
   },
   scrollView: {
     flexGrow: 1,
